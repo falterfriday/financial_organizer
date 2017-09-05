@@ -1,7 +1,7 @@
 import os
 import datetime
 import plaid
-import plaid_config
+from plaid_config import CLIENT_ID, ENV, PUBLIC_KEY, SECRET
 from flask import Flask
 from flask import render_template
 from flask import request
@@ -18,7 +18,6 @@ PLAID_ENV = plaid_config.ENV
 @app.route("/api")
 def index():
     print "The server is running. You'd better catch it!"
-    return render_template('index.ejs')
 
 if __name__ == "__main__":
     app.run()
