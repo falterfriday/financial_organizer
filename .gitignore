@@ -4,8 +4,10 @@ dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+flask_api/venv
 flask_api/plaid_config.py
 flask_api/client_secret.json
+flask_api/.env
 
 # Editor directories and files
 .idea
